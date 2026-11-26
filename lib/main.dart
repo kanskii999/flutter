@@ -1,90 +1,121 @@
+// Online Dart compiler (editor) for free
+// Write and run Dart online using this editor.
+
 void main() {
   // String name = "Kayrat Nurtas";
-  // int age = 40;
-  // double height = 1.75;
-  // print(name);
-  // print(age);
-  // print(height);
+  // int age = 18;
+  // if (age >= 18) {
+  //   print("Вам можно работать без согласия родителей");
+  // } else {
+  //   print("Получите согласие родителей");
+  // }
 
-  // print("Try clicking the Run button.");
+  // int grade = 66;
+  // String text = "";
+  // if (grade >= 90) {
+  //   text = "Great";
+  // } else if (grade >= 75) {
+  //   text = "Good";
+  // } else if (grade >= 50) {
+  //   text = "Bad";
+  // } else {
+  //   text = "Fail";
+  // }
+  // print("Your grade is $text");
 
-  List<String> celebrities = ["Tom Cruise", "Cameron Diaz", "Kayrat Nurtas"];
-  print(celebrities); // весь список
-  print(celebrities.first); // первый
-  print(celebrities.last); // последний
-  print(celebrities[2]); // по индексу
-  // print(celebrities.isEmpty); // проверям, пустой ли наш массив
-  // print(celebrities.isNotEmpty); // проверям, не пустой ли наш массив
+  // bool isPaidStudent = false;
+  // bool isGood = false;
+  
+  // print(isPaidStudent);
 
-  print(celebrities.contains("Kayrat Nurtas")); // проверка на наличие
-  print(celebrities.indexOf("Kayrat Nurtas")); // получить индекс элемента
-  print(celebrities.join(", ")); // вывод и объединение элементов
-  celebrities.add("Nurlan Onerbay"); // добавить в конец
-  print(celebrities.join(", ")); // вывод и объединение элементов
-  celebrities.insert(0, "Jason Huang"); // вставить по индексу
-  print(celebrities.join(", "));
-  celebrities.insert(1, "Alice Huang"); // вставить по индексу
-  print(celebrities.join(", "));
-  celebrities.remove("Cameron Diaz"); // удалить по значению
-  print(celebrities.join(", "));
-  celebrities.removeAt(0); // удалить по индексу
-  print(celebrities.join(", "));
-  celebrities.removeLast(); // удалить последний
-  print(celebrities.join(", "));
-  celebrities.clear(); // очистить, удалить все
-  print(celebrities.join(", "));
-  celebrities.add("Nurlan Onerbay");
-  celebrities.add("Nurlan Onerbay");
-  print(celebrities.join(", "));
-  print(celebrities.length);
+  // if (grade >= 70) {
+  //   if (isPaidStudent == false) {
+  //     print("You still have your scholarship!");
+  //   }
+  // }
 
-  celebrities.addAll([
-    "Kayrat Nurtas",
-    "Angelina Jolie",
-    "Xavier Milley",
-  ]); // добавить несколько элементов
-  print(celebrities.join(", "));
+  // if (grade >= 70) {
+  //   if (!isPaidStudent) {
+  //     print("You still have your scholarship!");
+  //   }
+  // }
 
-  Map<String, int> prices = {"Хлеб": 290, "Молоко": 800, "Яблоки": 950};
-  print("prices $prices");
-  print(prices["Молоко"]);
-  print('prices["Сыр"]: ${prices["Сыр"]}');
-  prices["Сыр"] = 3500;
-  print("prices $prices");
-  print("prices.length: $prices.length");
-  print("prices.length: ${prices.length}");
-  print("prices.isEmpty: ${prices.isEmpty}");
-  print("prices.containsKey('Сыр'): ${prices.containsKey('Сыр')}");
-  print("prices.containsKey('Айран'): ${prices.containsKey('Айран')}");
-  print('prices["Айран"]: ${prices["Айран"]}');
-  print("prices.containsValue(290): ${prices.containsValue(290)}");
-  print(prices.keys);
-  print(prices.values);
-  helloVoid();
-  print(helloString());
-  int num1 = 123;
-  int num2 = 321;
-  int num3 = add(num1, num2);
-  print(num3);
-  int num4 = multiply(num1, num2);
-  print(num4);
-  int num5 = add(num3, num4);
-  print(num4);
-}
+  // isPaidStudent == false и !isPaidStudent - это одно и то же!
 
-String helloString() {
-  String text = "Hello, World!";
-  return text;
-}
+  // if ((grade >= 70) && (!isPaidStudent)) {
+  //     print("You still have your scholarship!");
+  // }
 
-void helloVoid() {
-  print("Hello, World!");
-}
+  // if ((grade >= 70) || (name == "Kayrat Nurtas")) {
+  //   print("You still have your scholarship!");
+  // } else {
+  //   print("Sorry, $name! Bad luck!");
+  // }
 
-int add(int a, int b) {
-  return a + b;
-}
+  // String status = "";
+  // int shots = 5;
+  // if (shots > 2) {
+  //   status = "Алкоголик!";
+  // } else {
+  //   status = "В завязке!";
+  // }
+  // status = (shots > 2) ? "Алкоголик!" :  "В завязке!";
+  // print("Мое отношение к алкоголю: $status");
+  
+  // int num1 = 13;
+  // int num2 = 5;
+  // print("num1 + num2 = ${num1 + num2}");
+  // print("num1 * num2 = ${num1 * num2}");
+  // print("num1 - num2 = ${num1 - num2}");
+  // print("num1 / num2 = ${num1 / num2}");
+  // print("num1 / num2 = ${num3}");
+  // String numString3 = "5";
+  // int num3 = int.parse(numString3);
+  // print(num3);
+  // String numString4 = "5.5";
+  // int num4 = int.tryParse(numString4);
+  // print(num4);
+  // print(int.tryParse(numString4));
+  // print(int.parse(numString4));
 
-int multiply(int a, int b) {
-  return a * b;
+  
+  // double num3 = num1 / num2;
+  // print(num3);
+  // int num5 = num1 ~/ num2;
+  // print(num5);
+  // int num6 = num1 % num2;
+  // print(num6);
+  // print("num1 ~/ num2 = ${num1 ~/ num2}");
+  // print("num1 % num2 = ${num1 % num2}");
+
+  
+  
+  String text = "Пятница";
+  String result = "";
+  if (text == "Воскресенье") {
+    result = "Завтра понедельник!";
+  } else if (text == "Суббота") {
+    result = "Можем отдохнуть!";
+  } else if (text == "Пятница") {
+    result = "Ура! Последний рабочий день!";
+  } else {
+    result = "Работа! Снова работа!";
+  }
+  print("Сегодня $text. $result");
+
+  String resultSwitch = "";
+  switch (text) {
+      case "Воскресенье": 
+        resultSwitch = "Завтра понедельник!";
+      case "Суббота": 
+        resultSwitch = "Можем отдохнуть!";
+      case "Пятница": 
+        if (result == "Ура! Последний рабочий день!") {
+          break;
+        }
+        resultSwitch = "Ура! Последний рабочий день!";
+    default: 
+      resultSwitch = "Работа! Снова работа!";
+  }
+  print("Сегодня $text. $resultSwitch");
 }
